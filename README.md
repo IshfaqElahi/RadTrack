@@ -65,7 +65,10 @@ The tool uses a file named sources.xlsx containing valid pairs of radioactive so
 	CLI and web interface options.<br>
 
 
-**📸 Sample Output**
+**📸 Sample Output**!
+
 A side-by-side image is saved as tracks_comparison.jpg, showing original and detected particle tracks with labeled colors.
+
+[tracks_comparison](https://github.com/user-attachments/assets/c6d4e162-620d-4993-bf1b-a2e3a4e90094)
 
 
