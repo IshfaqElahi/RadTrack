@@ -1,4 +1,4 @@
-**🔬 ParticleTrackClassifier**
+**🔬 RadiationTrackDetect**
 A heuristic image processing algorithm that detects and classifies radiation particle tracks — such as alpha, beta, and muon — from cloud chamber images. This project uses OpenCV for contour-based analysis and validates the source-emitter pair using an external Excel file.
 
 
@@ -31,8 +31,8 @@ cloud_chamber_project/
 
 
 **🚀 How to Run**
-git clone: https://github.com/IshfaqElahi/RadTrack.git
-cd RadTrack
+git clone: https://github.com/IshfaqElahi/radiationtrackdetect.git
+cd radiationtrackdetect
 
 2. Create and activate a virtual environment (optional but recommended)
 python -m venv myenv
