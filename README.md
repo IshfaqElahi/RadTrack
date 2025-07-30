@@ -1,19 +1,19 @@
 **🔬 RadiationTrackDetect**
-A heuristic image processing algorithm that detects and classifies radiation particle tracks — such as alpha, beta, and muon — from cloud chamber images. This project uses OpenCV for contour-based analysis and validates the source-emitter pair using an external Excel file.
-
+A heuristic image processing algorithm that detects and classifies radiation particle tracks — such as alpha, beta, and muon — from cloud chamber images.<br> This project uses OpenCV for contour-based analysis and validates the source-emitter pair using an external Excel file.
+<br>
 
 **📌 Features**
-🖼️ Upload any cloud chamber image via a simple GUI.
-🧠 Classify tracks as alpha (red), beta (green), and muon (magenta) using contour area and shape heuristics.
-📄 Validate radiation source-emitter pair using a reference Excel file (sources.xlsx).
-🖍️ Visualizes results with labeled tracks and a legend.
-📸 Saves a side-by-side comparison of the original and processed image.
+🖼️ Upload any cloud chamber image via a simple GUI.<br>
+🧠 Classify tracks as alpha (red), beta (green), and muon (magenta) using contour area and shape heuristics.<br>
+📄 Validate radiation source-emitter pair using a reference Excel file (sources.xlsx).<br>
+🖍️ Visualizes results with labeled tracks and a legend.<br>
+📸 Saves a side-by-side comparison of the original and processed image.<br>
 
 
-**🧪 Example Use Case**
-You built a cloud chamber and took a photo of the tracks.
+**🧪 Example Use Case**<br>
+You built a cloud chamber and took a photo of the tracks.<br>
 
-You know the radioactive source used (e.g., Sr-90) and its emitted particle (e.g., Beta).
+You know the radioactive source used (e.g., Sr-90) and its emitted particle (e.g., Beta).<br>
 
 You launch this tool, upload the image, and input the source and emitter.
 
