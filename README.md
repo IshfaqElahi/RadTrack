@@ -26,7 +26,7 @@ cloud_chamber_project/<br>
 
 
 **🚀 How to Run**<br>
-git clone: https://github.com/IshfaqElahi/radiation_track_detect.git<br>
+1.git clone: https://github.com/IshfaqElahi/radiation_track_detect.git<br>
 cd radiationtrackdetect<br>
 
 2. Create and activate a virtual environment (optional but recommended)<br>
