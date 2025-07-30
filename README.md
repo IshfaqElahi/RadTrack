@@ -1,5 +1,5 @@
 **🔬 RadiationTrackDetect**
-A heuristic image processing algorithm that detects and classifies radiation particle tracks — such as alpha, beta, and muon — from cloud chamber images.<br> This project uses OpenCV for contour-based analysis and validates the source-emitter pair using an external Excel file.
+A heuristic image processing algorithm that detects and classifies radiation particle tracks — such as alpha, beta, and muon — from cloud chamber images. This project uses OpenCV for contour-based analysis and validates the source-emitter pair using an external Excel file.
 <br>
 
 **📌 Features**
@@ -12,45 +12,40 @@ A heuristic image processing algorithm that detects and classifies radiation par
 
 **🧪 Example Use Case**<br>
 You built a cloud chamber and took a photo of the tracks.<br>
-
 You know the radioactive source used (e.g., Sr-90) and its emitted particle (e.g., Beta).<br>
+You launch this tool, upload the image, and input the source and emitter.<br>
+The tool verifies the input against the reference file.<br>
+The program highlights tracks based on contour shape and size and saves the result.<br>
 
-You launch this tool, upload the image, and input the source and emitter.
-
-The tool verifies the input against the reference file.
-
-The program highlights tracks based on contour shape and size and saves the result.
-
-
-**📂 Project Structure**
-cloud_chamber_project/
-├── analyze_tracks.py
-├── sources.xlsx
-├── tracks_comparison.jpg
-└── README.md
+**📂 Project Structure**<br>
+cloud_chamber_project/<br>
+├── analyze_tracks.py<br>
+├── sources.xlsx<br>
+├── tracks_comparison.jpg<br>
+└── README.md<br>
 
 
-**🚀 How to Run**
-git clone: https://github.com/IshfaqElahi/radiationtrackdetect.git
-cd radiationtrackdetect
+**🚀 How to Run**<br>
+git clone: https://github.com/IshfaqElahi/radiationtrackdetect.git<br>
+cd radiationtrackdetect<br>
 
-2. Create and activate a virtual environment (optional but recommended)
-python -m venv myenv
-myenv\Scripts\activate  # Windows
+2. Create and activate a virtual environment (optional but recommended)<br>
+python -m venv myenv<br>
+myenv\Scripts\activate  # Windows<br>
 
-3. Install dependencies
-pip install opencv-python pandas openpyxl numpy
+3. Install dependencies<br>
+pip install opencv-python pandas openpyxl numpy<br>
 
-4. Run the main script
-python analyze_tracks.py
+4. Run the main script<br>
+python analyze_tracks.py<br>
 
 
-**📥 Dependencies**
-  opencv-python
-  pandas
-  openpyxl
-  numpy
-  tkinter (comes with Python)
+**📥 Dependencies**<br>
+  opencv-python<br>
+  pandas<br>
+  openpyxl<br>
+  numpy<br>
+  tkinter (comes with Python)<br>
 
 
 **🧠 Classification Logic (Heuristic Rules)**
@@ -60,15 +55,15 @@ python analyze_tracks.py
 | Beta     | Medium area, thin and curved | 🟢 Green   |
 | Muon     | Long and straight, low area  | 🟣 Magenta |
 
+<br>
+**📘 Source Validation**<br>
+The tool uses a file named sources.xlsx containing valid pairs of radioactive sources and their emitted particles. If the user enters an invalid combination, the program stops with an error message.<br>
 
-**📘 Source Validation**
-The tool uses a file named sources.xlsx containing valid pairs of radioactive sources and their emitted particles. If the user enters an invalid combination, the program stops with an error message.
 
-
-**🛠️ TODO / Future Improvements**
-Improve accuracy using machine learning (e.g., CNN).
-Support for gamma rays and neutron tracks.
-CLI and web interface options.
+**🛠️ TODO / Future Improvements**<br>
+Improve accuracy using machine learning (e.g., CNN).<br>
+Support for gamma rays and neutron tracks.<br>
+CLI and web interface options.<br>
 
 
 **📸 Sample Output**
