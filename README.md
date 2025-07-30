@@ -55,15 +55,14 @@ python analyze_tracks.py<br>
 | Beta     | Medium area, thin and curved | 🟢 Green   |
 | Muon     | Long and straight, low area  | 🟣 Magenta |
 
-<br>
+
 **📘 Source Validation**<br>
 The tool uses a file named sources.xlsx containing valid pairs of radioactive sources and their emitted particles. If the user enters an invalid combination, the program stops with an error message.<br>
 
-
-**🛠️ TODO / Future Improvements**<br>
-Improve accuracy using machine learning (e.g., CNN).<br>
-Support for gamma rays and neutron tracks.<br>
-CLI and web interface options.<br>
+**🛠️ TODO / Future Improvements** <br>
+	Improve accuracy using machine learning (e.g., CNN).<br>
+	Support for gamma rays and neutron tracks.<br>
+	CLI and web interface options.<br>
 
 
 **📸 Sample Output**
