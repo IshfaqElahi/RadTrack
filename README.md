@@ -1,4 +1,4 @@
-**🔬 RadiationTrackDetect**<br>
+**🔬 radiation_track_detect**<br>
 A heuristic image processing algorithm that detects and classifies radiation particle tracks — such as alpha, beta, and muon — from cloud chamber images. This project uses OpenCV for contour-based analysis and validates the source-emitter pair using an external Excel file.
 <br>
 
