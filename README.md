@@ -1,56 +1,51 @@
-**🔬 ParticleTrackClassifier**
+**🔬 radiation_track_detect**<br>
 A heuristic image processing algorithm that detects and classifies radiation particle tracks — such as alpha, beta, and muon — from cloud chamber images. This project uses OpenCV for contour-based analysis and validates the source-emitter pair using an external Excel file.
+<br>
+
+**📌 Features**<br>
+🖼️ Upload any cloud chamber image via a simple GUI.<br>
+🧠 Classify tracks as alpha (red), beta (green), and muon (magenta) using contour area and shape heuristics.<br>
+📄 Validate radiation source-emitter pair using a reference Excel file (sources.xlsx).<br>
+🖍️ Visualizes results with labeled tracks and a legend.<br>
+📸 Saves a side-by-side comparison of the original and processed image.<br>
 
 
-**📌 Features**
-🖼️ Upload any cloud chamber image via a simple GUI.
-🧠 Classify tracks as alpha (red), beta (green), and muon (magenta) using contour area and shape heuristics.
-📄 Validate radiation source-emitter pair using a reference Excel file (sources.xlsx).
-🖍️ Visualizes results with labeled tracks and a legend.
-📸 Saves a side-by-side comparison of the original and processed image.
+**🧪 Example Use Case**<br>
+You built a cloud chamber and took a photo of the tracks.<br>
+You know the radioactive source used (e.g., Sr-90) and its emitted particle (e.g., Beta).<br>
+You launch this tool, upload the image, and input the source and emitter.<br>
+The tool verifies the input against the reference file.<br>
+The program highlights tracks based on contour shape and size and saves the result.<br>
+
+**📂 Project Structure**<br>
+cloud_chamber_project/<br>
+├── analyze_tracks.py<br>
+├── sources.xlsx<br>
+├── tracks_comparison.jpg<br>
+└── README.md<br>
 
 
-**🧪 Example Use Case**
-You built a cloud chamber and took a photo of the tracks.
+**🚀 How to Run**<br>
+1.git clone: https://github.com/IshfaqElahi/radiation_track_detect.git<br>
+cd radiationtrackdetect<br>
 
-You know the radioactive source used (e.g., Sr-90) and its emitted particle (e.g., Beta).
+2. Create and activate a virtual environment (optional but recommended)<br>
+python -m venv myenv<br>
+myenv\Scripts\activate  # Windows<br>
 
-You launch this tool, upload the image, and input the source and emitter.
+3. Install dependencies<br>
+pip install opencv-python pandas openpyxl numpy<br>
 
-The tool verifies the input against the reference file.
-
-The program highlights tracks based on contour shape and size and saves the result.
-
-
-**📂 Project Structure**
-cloud_chamber_project/
-├── analyze_tracks.py
-├── sources.xlsx
-├── tracks_comparison.jpg
-└── README.md
+4. Run the main script<br>
+python analyze_tracks.py<br>
 
 
-**🚀 How to Run**
-git clone: https://github.com/IshfaqElahi/RadTrack.git
-cd RadTrack
-
-2. Create and activate a virtual environment (optional but recommended)
-python -m venv myenv
-myenv\Scripts\activate  # Windows
-
-3. Install dependencies
-pip install opencv-python pandas openpyxl numpy
-
-4. Run the main script
-python analyze_tracks.py
-
-
-**📥 Dependencies**
-  opencv-python
-  pandas
-  openpyxl
-  numpy
-  tkinter (comes with Python)
+**📥 Dependencies**<br>
+  opencv-python<br>
+  pandas<br>
+  openpyxl<br>
+  numpy<br>
+  tkinter (comes with Python)<br>
 
 
 **🧠 Classification Logic (Heuristic Rules)**
@@ -61,17 +56,19 @@ python analyze_tracks.py
 | Muon     | Long and straight, low area  | 🟣 Magenta |
 
 
-**📘 Source Validation**
-The tool uses a file named sources.xlsx containing valid pairs of radioactive sources and their emitted particles. If the user enters an invalid combination, the program stops with an error message.
+**📘 Source Validation**<br>
+The tool uses a file named sources.xlsx containing valid pairs of radioactive sources and their emitted particles. If the user enters an invalid combination, the program stops with an error message.<br>
+
+**🛠️ TODO / Future Improvements** <br>
+	Improve accuracy using machine learning (e.g., CNN).<br>
+	Support for gamma rays and neutron tracks.<br>
+	CLI and web interface options.<br>
 
 
-**🛠️ TODO / Future Improvements**
-Improve accuracy using machine learning (e.g., CNN).
-Support for gamma rays and neutron tracks.
-CLI and web interface options.
+**📸 Sample Output**!
 
-
-**📸 Sample Output**
 A side-by-side image is saved as tracks_comparison.jpg, showing original and detected particle tracks with labeled colors.
+
+[tracks_comparison](https://github.com/user-attachments/assets/c6d4e162-620d-4993-bf1b-a2e3a4e90094)
 
 
